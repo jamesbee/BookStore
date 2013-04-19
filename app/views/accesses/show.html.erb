@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Access name:</b>
+  <%= @access.access_name %>
+</p>
+
+<p>
+  <b>User editor:</b>
+  <%= @access.user_editor %>
+</p>
+
+<p>
+  <b>Good editor:</b>
+  <%= @access.good_editor %>
+</p>
+
+<p>
+  <b>Board editor:</b>
+  <%= @access.board_editor %>
+</p>
+
+
+<%= link_to 'Edit', edit_access_path(@access) %> |
+<%= link_to 'Back', accesses_path %>

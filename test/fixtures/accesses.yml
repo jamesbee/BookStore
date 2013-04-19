@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  access_name: MyString
+  user_editor: false
+  good_editor: false
+  board_editor: false
+
+two:
+  access_name: MyString
+  user_editor: false
+  good_editor: false
+  board_editor: false
