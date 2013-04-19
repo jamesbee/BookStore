@@ -3,6 +3,7 @@ class Group < ActiveRecord::Base
     validates :group_name, presence: true, uniqueness: true
 
     has_many :accesses
+    has_many :users
 
     # ensure no referency to group
     before_destroy :ensure_not_referenced_by_any_access

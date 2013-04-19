@@ -2,7 +2,7 @@ class Access < ActiveRecord::Base
     attr_accessible :access_name, :board_editor, :good_editor, :user_editor
     validate :access_name, presence: true, uniqueness: true
 
-    has_many :groups
+    belongs_to :groups
 
     # ensure no referency to access
     before_destroy :ensure_not_referenced_by_any_group

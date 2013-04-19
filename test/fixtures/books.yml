@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  onsale: 1.5
+  book_info: MyString
+  call_number: 1
+  catagory_id: 1
+
+two:
+  onsale: 1.5
+  book_info: MyString
+  call_number: 1
+  catagory_id: 1

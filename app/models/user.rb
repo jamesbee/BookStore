@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
     attr_accessible :email, :last_login_ip, :last_login_time, :name, :salt, :password, :password_confirmation
     validate :name, presence: true, uniqueness: true
     has_secure_password
+    belongs_to :group
 
     after_destroy :ensure_one_admin_remains
 
